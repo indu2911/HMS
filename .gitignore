@@ -5,3 +5,5 @@
 /.vs
 /API/HMS/.vs/HMS
 /API/HMS/HMS/obj
+/API/HMS/HMS/bin/Debug/net6.0
+/API/HMS/HMS/HMS.csproj.user
