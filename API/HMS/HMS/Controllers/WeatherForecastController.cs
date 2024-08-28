@@ -13,7 +13,7 @@ namespace HMS.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        //Comment added and identified the qwqd condition issue
+        //Comment added and identified the ABC condition issue
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
