@@ -15,6 +15,8 @@ namespace HMS.Controllers
         }
 
 
+        //TODO
+
         [HttpGet]
         public List<HospitalModel> Get()
         {
