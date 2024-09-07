@@ -1,5 +1,6 @@
 ﻿using HMS.Models;
 using HMS.Services;
+using HMS.Utils;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HMS.Controllers
@@ -12,15 +13,21 @@ namespace HMS.Controllers
         public HospitalController()
         {
             hospitalService = new HospitalService();
+
         }
 
 
         //TODO
 
         [HttpGet]
-        public List<HospitalModel> Get()
+        public List<HospitalModel> Getlist()
         {
+            string encrypt = "vigneshkumar";
+            string encryptedstring = EncryptDecrypt.Encrypt(encrypt);
+
+            string decryptedstring = EncryptDecrypt.Decrypt(encryptedstring);
             return hospitalService.GetHospitals();
+
         }
     }
 }
